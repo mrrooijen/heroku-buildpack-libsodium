@@ -43,7 +43,7 @@ export_env_dir "$ENV_DIR"
 
 cd $CACHE_DIR
 echo -n "-----> Fetching $SODIUM_DIR... "
-curl --silent --remote-name --location $TARBALL_URL
+curl --silent --remote-name $TARBALL_URL
 tar -xf $TARBALL
 rm $TARBALL
 echo "done"
